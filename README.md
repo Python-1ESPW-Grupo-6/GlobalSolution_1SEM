@@ -22,33 +22,27 @@ Nossa solução proposta consiste em um website que servirá como uma plataforma
 
 Através do uso de uma IA generativa direcionada, será possível analisar indicadores socioeconômicos específicos para avaliar o potencial déficit alimentar de uma determinada região, e fornecer os resultados dessas avaliações para agentes responsáveis por atuar na manutenção desse problema, visando auxiliar com o problema da fome.
 
-No website, as ONGs terão acesso a informações atualizadas sobre as regiões, estados e municípios que enfrentam as maiores dificuldades alimentares no país. Através de um formulário de inscrição, as organizações poderão fornecer dados relevantes, como sua área de atuação, tipo de ajuda que podem oferecer (como alimentos, água etc.) e outras informações importantes para compreender a dimensão da organização. Uma outra funcionalidade do website será também fornecer dados precisos sobre a quantidade de alimento necessária em uma determinada região ou estado, oferecendo uma visão clara da demanda por assistência alimentar.
+No website, as ONGs terão acesso a informações atualizadas sobre as regiões e estados que enfrentam as maiores dificuldades alimentares no país. Através de um formulário de inscrição, as organizações poderão fornecer dados relevantes, como sua área de atuação, tipo de ajuda que podem oferecer (como alimentos, água etc.) e outras informações importantes para compreender a dimensão da organização. Uma outra funcionalidade do website será também fornecer dados precisos sobre a quantidade de alimento necessária em uma determinada região ou estado, oferecendo uma visão clara da demanda por assistência alimentar.
 
 Neste programa em Python, buscamos reproduzir como será o funcionamento da IA Generativa, através de códigos de programação e valores pré-estabelecidos, de modo a visualizar como vai ser a utilização da versão final do programa e da aplicação WEB.
+
 ___
 ### Funcionalidades Implementadas
 
+Descrição do projeto: Aba para exibição do descritivo da solução.
 
+Cadastro de ONG/Ajuda: A plataforma permite o cadastro de ONGs e indivíduos interessados em contribuir para o combate à fome. Ao preencher alguns campos necessários (Nome da ONg, CNPJ, representante, etc.), os usuários são cadastrados e podem escolher o filtro de atuação que desejar (Região do País ou Estado), a partir desse filtro, iremos exibir infomrações de populção com fome e comida necessária, segmentada por tempo (dia, mês e ano) a fim de ter um parâmetro para a doação que o usário deseja realizar. 
 
+Análise Geral: A plataforma oferece uma análise abrangente e atualizada sobre a arrecadação de alimentos, mostrando o quanto já foi doado e quais áreas ainda precisam de apoio. Essa análise geral permite que os usuários acompanhem o progresso do combate à fome e tomem decisões estratégicas para maximizar o impacto de suas ações.
 
-
-
-
-
-
+Histórico: Exibição do histórico de ONGs cadastradas, alimento doado e regiões atendidadas durante a sessão.
 
 ___
 ### Instruções de uso
 
-
-
-
-
-
-
-
-
-
+Valores nos campos de preenchimento fora dos padrões de oção não serão aceitos, se baseie nas instruções do código.
+Se atente ao preenchimento dos campos, não será permitido uso de 'strings' em espaços destinados a valores numéricos. 
+Não abreviar o nome de Regiões ou Estado do País, caso isto ocorra o valor não será aceito, siga as instruções de nomenclatura ao longo do código.
 
 ___
 ### Pré-requisitos
