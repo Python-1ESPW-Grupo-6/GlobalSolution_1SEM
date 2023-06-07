@@ -182,7 +182,7 @@ while True:
                                     break
                                 else:
                                     opcao_erro()
-                                break
+                            break
                         elif local_atuacao == 2:
                             print('Opção selecionada: Estadual')
                             print('')
@@ -275,7 +275,7 @@ while True:
                                     break
                                 else:
                                     opcao_erro()
-                                break
+                            break
                         elif local_atuacao == 3:
                             print('Cadastro cancelado!')
                             break
@@ -304,10 +304,10 @@ while True:
                                 print('Opção Selecionada: ONGs cadastradas')
                                 print('')
                                 for i, ongs_regiao in enumerate(nomes_ongs_regiao):
-                                    print(f'{i+1}. Nome: {ongs_regiao}, Contato: {emails_ongs_regiao}, Área de atuação: {areas_de_atuacao_regiao}')
+                                    print(f'{i+1}. Nome: {ongs_regiao}, Contato: {emails_ongs_regiao[i]}, Área de atuação: {areas_de_atuacao_regiao[i]}')
                                 print('')
                                 for i, ongs_estado in enumerate(nomes_ongs_estado):
-                                    print(f'{i+1}. Nome: {ongs_estado}, Contato: {emails_ongs_estado}, Área de atuação: {areas_de_atuacao_estado}')
+                                    print(f'{i+1}. Nome: {ongs_estado}, Contato: {emails_ongs_estado[i]}, Área de atuação: {areas_de_atuacao_estado[i]}')
                             case 3:
                                 print('Opção Selecionada: Voltar ao menu principal')
                                 print('')
