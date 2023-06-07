@@ -16,32 +16,30 @@ areas_de_atuacao_estado = []
 
 # Regiões
 lista_regioes = ['Norte', 'Nordeste']
-norte = (4859000)
-nordeste = (12127000)
+norte = 4859000
+nordeste = 12127000
 
 # Estados
 lista_estados = ['Amapá', 'Pará', 'Alagoas', 'Piauí']
-amapa = (281000)
-para = (2633000)
-alagoas = (1235000)
-piaui = (1128000)
+amapa = 281000
+para = 2633000
+alagoas = 1235000
+piaui = 1128000
 
 def regioes():
-    #print('Essas são algumas das ONGs que nos ajudam nessas regiões: ')
     print('')
-    print('Pessoas com fome: Norte - %1.0f; Nordeste - %1.0f' % norte, nordeste)
-    print('Alimento necessário por dia: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % norte*3, nordeste*3)
-    print('Alimento necessário por mês: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % norte*90, nordeste*90)
-    print('Alimento necessário por ano: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % norte*1080, nordeste*1080)
+    print('Pessoas com fome: Norte - %1.0f; Nordeste - %1.0f' % (norte, nordeste))
+    print('Alimento necessário por dia: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % (norte*3, nordeste*3))
+    print('Alimento necessário por mês: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % (norte*90, nordeste*90))
+    print('Alimento necessário por ano: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % (norte*1080, nordeste*1080))
     print('')
 
 def estados():
-    #print('Essas são algumas das ONGs que nos ajudam nesses estados: ')
     print('')
-    print('Pessoas com fome: Amapá - %1.0f; Pará - %1.0f; Alagoas - %1.0f; Piauí - %1.0f' % amapa, para, alagoas, piaui)
-    print('Alimento necessário por dia: Amapá - %1.0f Kg; Pará - %1.0f Kg; Alagoas - %1.0f Kg; Piauí - %1.0f Kg' % amapa*3, para*3, alagoas*3, piaui*3)
-    print('Alimento necessário por mês: Amapá - %1.0f Kg; Pará - %1.0f Kg; Alagoas - %1.0f Kg; Piauí - %1.0f Kg' % amapa*90, para*90, alagoas*90, piaui*90)
-    print('Alimento necessário por ano: Amapá - %1.0f Kg; Pará - %1.0f Kg; Alagoas - %1.0f Kg; Piauí - %1.0f Kg' % amapa*1080, para*1080, alagoas*1080, piaui*1080)
+    print('Pessoas com fome: Amapá - %1.0f; Pará - %1.0f; Alagoas - %1.0f; Piauí - %1.0f' % (amapa, para, alagoas, piaui))
+    print('Alimento necessário por dia: Amapá - %1.0f Kg; Pará - %1.0f Kg; Alagoas - %1.0f Kg; Piauí - %1.0f Kg' % (amapa*3, para*3, alagoas*3, piaui*3))
+    print('Alimento necessário por mês: Amapá - %1.0f Kg; Pará - %1.0f Kg; Alagoas - %1.0f Kg; Piauí - %1.0f Kg' % (amapa*90, para*90, alagoas*90, piaui*90))
+    print('Alimento necessário por ano: Amapá - %1.0f Kg; Pará - %1.0f Kg; Alagoas - %1.0f Kg; Piauí - %1.0f Kg' % (amapa*1080, para*1080, alagoas*1080, piaui*1080))
     print('')
 
 def opcao_erro():
@@ -80,7 +78,7 @@ while True:
                 nome_ong = input('Insira o nome da sua ONG: ')
                 representante_ong = input('Insira o nome de algum representante: ')
                 email_ong = input('Insira o email de contato da ONG: ')
-                cnpj_ong = int(input('Insira o CNPJ da ONG:'))
+                cnpj_ong = int(input('Insira o CNPJ da ONG: '))
                 endereço_ong = input('Insira qual seria o endereço sede da ONG: ')
                 print('')
                 while True:
@@ -180,6 +178,7 @@ while True:
                                         break
                                     else:
                                         opcao_erro()
+                            break
                         elif local_atuacao == 2:
                             print('Opção selecionada: Estadual')
                             print('')
