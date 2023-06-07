@@ -29,13 +29,13 @@ Neste programa em Python, buscamos reproduzir como será o funcionamento da IA G
 ___
 ### Funcionalidades Implementadas
 
-Descrição do projeto: Aba para exibição do descritivo da solução.
+**Descrição do projeto:** Aba para exibição do descritivo da solução.
 
-Cadastro de ONG/Ajuda: A plataforma permite o cadastro de ONGs e indivíduos interessados em contribuir para o combate à fome. Ao preencher alguns campos necessários (Nome da ONg, CNPJ, representante, etc.), os usuários são cadastrados e podem escolher o filtro de atuação que desejar (Região do País ou Estado), a partir desse filtro, iremos exibir infomrações de populção com fome e comida necessária, segmentada por tempo (dia, mês e ano) a fim de ter um parâmetro para a doação que o usário deseja realizar. 
+**Cadastro de ONG/Ajuda:** A plataforma permite o cadastro de ONGs e indivíduos interessados em contribuir para o combate à fome. Ao preencher alguns campos necessários (Nome da ONg, CNPJ, representante, etc.), os usuários são cadastrados e podem escolher o filtro de atuação que desejar (Região do País ou Estado), a partir desse filtro, iremos exibir infomrações de populção com fome e comida necessária, segmentada por tempo (dia, mês e ano) a fim de ter um parâmetro para a doação que o usário deseja realizar. 
 
-Análise Geral: A plataforma oferece uma análise abrangente e atualizada sobre a arrecadação de alimentos, mostrando o quanto já foi doado e quais áreas ainda precisam de apoio. Essa análise geral permite que os usuários acompanhem o progresso do combate à fome e tomem decisões estratégicas para maximizar o impacto de suas ações.
+**Análise Geral:** A plataforma oferece uma análise abrangente e atualizada sobre a arrecadação de alimentos, mostrando o quanto já foi doado e quais áreas ainda precisam de apoio. Essa análise geral permite que os usuários acompanhem o progresso do combate à fome e tomem decisões estratégicas para maximizar o impacto de suas ações.
 
-Histórico: Exibição do histórico de ONGs cadastradas, alimento doado e regiões atendidadas durante a sessão.
+**Sair do programa:** Finaliza a sessão do programa.
 
 ___
 ### Instruções de uso
@@ -54,4 +54,4 @@ ___
 O objetivo da solução que idealizamos é melhor ilustrar a respeito da situação da fome em diferentes regiões, e informar adequadamente os agentes responsáveis por ajudar nesta causa, como ONGs e órgãos públicos, de modo que as ações sociais voltadas ao problema sejam mais eficientes e, consequentemente, a fome seja combatida de melhor forma, com as regiões mais necessitadas recebendo um auxílio adequado para sua situação
 ___
 ### Links Referênciais
-  [Link para o vídeo explicativo do projeto no YouTube]()
+  [Link para o vídeo explicativo do projeto no YouTube](https://www.youtube.com/watch?v=p-x96xZq4Pw)
