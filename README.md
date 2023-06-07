@@ -1,4 +1,5 @@
 ## Global Solution 1º Semestre - Computational Thinking with Python
+![Badge Concluido](https://img.shields.io/badge/STATUS-CONCLUIDO-GREEN)
 
 - Guilherme Akio - 98582
 - Matheus Motta - 550352
