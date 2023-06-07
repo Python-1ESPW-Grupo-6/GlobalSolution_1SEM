@@ -20,7 +20,7 @@ norte = 4859000
 nordeste = 12127000
 
 # Estados
-lista_estados = ['Amapá', 'Pará', 'Alagoas', 'Piauí']
+lista_estados = ['Amapá', 'Amapa', 'Pará', 'Para', 'Alagoas', 'Piauí', 'Piaui']
 amapa = 281000
 para = 2633000
 alagoas = 1235000
@@ -95,179 +95,187 @@ while True:
                             print('')
                             print('Aqui está a tabela explicando qual tipo de ajuda precisamos nas regiões: ')
                             regioes()
-                            escolha_regiao = input('Digite a região a qual escolheu ajudar: ').lower()
-                            print('')
-                            if escolha_regiao in [regiao_escolhida.lower() for regiao_escolhida in lista_regioes]:
-                                while True:
-                                    ajuda_por_regiao = input('Quer ajudar %s por dia, mês ou anos? ' % escolha_regiao)
-                                    print('')
-                                    if ajuda_por_regiao == 'dia':
-                                        print('Ajuda escolhida por dia!')
+                            while True:
+                                escolha_regiao = input('Digite a região a qual escolheu ajudar: ').lower()
+                                print('')
+                                if escolha_regiao in [regiao_escolhida.lower() for regiao_escolhida in lista_regioes]:
+                                    while True:
+                                        ajuda_por_regiao = input('Quer ajudar %s por dia, mês ou anos? ' % escolha_regiao)
                                         print('')
-                                        while True:
-                                            confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
-                                            if confirmar_cadastro == 'sim':
-                                                nomes_ongs_regiao.append(nome_ong)
-                                                representantes_ongs_regiao.append(representante_ong)
-                                                emails_ongs_regiao.append(email_ong)
-                                                cnpj_ongs_regiao.append(cnpj_ong)
-                                                endereços_ongs_regiao.append(endereço_ong)
-                                                areas_de_atuacao_regiao.append(escolha_regiao.capitalize())
-                                                print('Cadastro finalizado!')
-                                                print('')
-                                                print('Muito obrigado pela ajuda!')
-                                                break
-                                            elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
-                                                print('Confimação negada!')
-                                                print('')
-                                                print('Obrigado pelo interesse!')
-                                                break
-                                            else:
-                                                opcao_erro()
-                                                print('')
-                                        break
-                                    elif ajuda_por_regiao == 'mes' or ajuda_por_regiao == 'mês':
-                                        print('Ajuda escolhida por mês!')
-                                        print('')
-                                        while True:
-                                            confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
-                                            if confirmar_cadastro == 'sim':
-                                                nomes_ongs_regiao.append(nome_ong)
-                                                representantes_ongs_regiao.append(representante_ong)
-                                                emails_ongs_regiao.append(email_ong)
-                                                cnpj_ongs_regiao.append(cnpj_ong)
-                                                endereços_ongs_regiao.append(endereço_ong)
-                                                areas_de_atuacao_regiao.append(escolha_regiao.capitalize())
-                                                print('Cadastro finalizado!')
-                                                print('')
-                                                print('Muito obrigado pela ajuda!')
-                                                break
-                                            elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
-                                                print('Confimação negada!')
-                                                print('')
-                                                print('Obrigado pelo interesse!')
-                                                break
-                                            else:
-                                                opcao_erro()
-                                                print('')
-                                        break
-                                    elif ajuda_por_regiao == 'ano':
-                                        print('Ajuda escolhida por ano!')
-                                        print('')
-                                        while True:
-                                            confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
-                                            if confirmar_cadastro == 'sim':
-                                                nomes_ongs_regiao.append(nome_ong)
-                                                representantes_ongs_regiao.append(representante_ong)
-                                                emails_ongs_regiao.append(email_ong)
-                                                cnpj_ongs_regiao.append(cnpj_ong)
-                                                endereços_ongs_regiao.append(endereço_ong)
-                                                areas_de_atuacao_regiao.append(escolha_regiao.capitalize())
-                                                print('Cadastro finalizado!')
-                                                print('')
-                                                print('Muito obrigado pela ajuda!')
-                                                break
-                                            elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
-                                                print('Confimação negada!')
-                                                print('')
-                                                print('Obrigado pelo interesse!')
-                                                break
-                                            else:
-                                                opcao_erro()
-                                                print('')
-                                        break
-                                    else:
-                                        opcao_erro()
-                            break
+                                        if ajuda_por_regiao == 'dia':
+                                            print('Ajuda escolhida por dia!')
+                                            print('')
+                                            while True:
+                                                confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                if confirmar_cadastro == 'sim':
+                                                    nomes_ongs_regiao.append(nome_ong)
+                                                    representantes_ongs_regiao.append(representante_ong)
+                                                    emails_ongs_regiao.append(email_ong)
+                                                    cnpj_ongs_regiao.append(cnpj_ong)
+                                                    endereços_ongs_regiao.append(endereço_ong)
+                                                    areas_de_atuacao_regiao.append(escolha_regiao.capitalize())
+                                                    print('Cadastro finalizado!')
+                                                    print('')
+                                                    print('Muito obrigado pela ajuda!')
+                                                    break
+                                                elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
+                                                    print('Confimação negada!')
+                                                    print('')
+                                                    print('Obrigado pelo interesse!')
+                                                    break
+                                                else:
+                                                    opcao_erro()
+                                                    print('')
+                                            break
+                                        elif ajuda_por_regiao == 'mes' or ajuda_por_regiao == 'mês':
+                                            print('Ajuda escolhida por mês!')
+                                            print('')
+                                            while True:
+                                                confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                if confirmar_cadastro == 'sim':
+                                                    nomes_ongs_regiao.append(nome_ong)
+                                                    representantes_ongs_regiao.append(representante_ong)
+                                                    emails_ongs_regiao.append(email_ong)
+                                                    cnpj_ongs_regiao.append(cnpj_ong)
+                                                    endereços_ongs_regiao.append(endereço_ong)
+                                                    areas_de_atuacao_regiao.append(escolha_regiao.capitalize())
+                                                    print('Cadastro finalizado!')
+                                                    print('')
+                                                    print('Muito obrigado pela ajuda!')
+                                                    break
+                                                elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
+                                                    print('Confimação negada!')
+                                                    print('')
+                                                    print('Obrigado pelo interesse!')
+                                                    break
+                                                else:
+                                                    opcao_erro()
+                                                    print('')
+                                            break
+                                        elif ajuda_por_regiao == 'ano':
+                                            print('Ajuda escolhida por ano!')
+                                            print('')
+                                            while True:
+                                                confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                if confirmar_cadastro == 'sim':
+                                                    nomes_ongs_regiao.append(nome_ong)
+                                                    representantes_ongs_regiao.append(representante_ong)
+                                                    emails_ongs_regiao.append(email_ong)
+                                                    cnpj_ongs_regiao.append(cnpj_ong)
+                                                    endereços_ongs_regiao.append(endereço_ong)
+                                                    areas_de_atuacao_regiao.append(escolha_regiao.capitalize())
+                                                    print('Cadastro finalizado!')
+                                                    print('')
+                                                    print('Muito obrigado pela ajuda!')
+                                                    break
+                                                elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
+                                                    print('Confimação negada!')
+                                                    print('')
+                                                    print('Obrigado pelo interesse!')
+                                                    break
+                                                else:
+                                                    opcao_erro()
+                                                    print('')
+                                            break
+                                        else:
+                                            opcao_erro()
+                                    break
+                                else:
+                                    opcao_erro()
+                                break
                         elif local_atuacao == 2:
                             print('Opção selecionada: Estadual')
                             print('')
                             print('Aqui está a tabela explicando qual tipo de ajuda precisamos nos estados: ')
                             estados()
-                            escolha_estado = input('Digite o estado a qual escolheu ajudar: ').lower()
-                            print('')
-                            if escolha_estado in [estado_escolhido.lower() for estado_escolhido in lista_estados]:
-                                while True:
-                                    ajuda_por_estado = input('Quer ajudar por dia, mês ou anos? ')
-                                    print('')
-                                    if ajuda_por_estado == 'dia':
-                                        print('Ajuda escolhida por dia!')
+                            while True:
+                                escolha_estado = input('Digite o estado a qual escolheu ajudar: ').lower()
+                                print('')
+                                if escolha_estado in [estado_escolhido.lower() for estado_escolhido in lista_estados]:
+                                    while True:
+                                        ajuda_por_estado = input('Quer ajudar por dia, mês ou anos? ')
                                         print('')
-                                        while True:
-                                            confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
-                                            if confirmar_cadastro == 'sim':
-                                                nomes_ongs_estado.append(nome_ong)
-                                                representantes_ongs_estado.append(representante_ong)
-                                                emails_ongs_estado.append(email_ong)
-                                                cnpj_ongs_estado.append(cnpj_ong)
-                                                endereços_ongs_estado.append(endereço_ong)
-                                                areas_de_atuacao_estado.append(escolha_estado.capitalize())
-                                                print('Cadastro finalizado!')
-                                                print('')
-                                                print('Muito obrigado pela ajuda!')
-                                                break
-                                            elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
-                                                print('Confimação negada!')
-                                                print('')
-                                                print('Obrigado pelo interesse!')
-                                                break
-                                            else:
-                                                opcao_erro()
-                                                print('')
-                                        break
-                                    elif ajuda_por_estado == 'mes' or ajuda_por_regiao == 'mês':
-                                        print('Ajuda escolhida por mês!')
-                                        print('')
-                                        while True:
-                                            confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
-                                            if confirmar_cadastro == 'sim':
-                                                nomes_ongs_estado.append(nome_ong)
-                                                representantes_ongs_estado.append(representante_ong)
-                                                emails_ongs_estado.append(email_ong)
-                                                cnpj_ongs_estado.append(cnpj_ong)
-                                                endereços_ongs_estado.append(endereço_ong)
-                                                areas_de_atuacao_estado.append(escolha_estado.capitalize())
-                                                print('Cadastro finalizado!')
-                                                print('')
-                                                print('Muito obrigado pela ajuda!')
-                                                break
-                                            elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
-                                                print('Confimação negada!')
-                                                print('')
-                                                print('Obrigado pelo interesse!')
-                                                break
-                                            else:
-                                                opcao_erro()
-                                                print('')
-                                        break
-                                    elif ajuda_por_estado == 'ano':
-                                        print('Ajuda escolhida por ano!')
-                                        print('')
-                                        while True:
-                                            confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
-                                            if confirmar_cadastro == 'sim':
-                                                nomes_ongs_estado.append(nome_ong)
-                                                representantes_ongs_estado.append(representante_ong)
-                                                emails_ongs_estado.append(email_ong)
-                                                cnpj_ongs_estado.append(cnpj_ong)
-                                                endereços_ongs_estado.append(endereço_ong)
-                                                areas_de_atuacao_estado.append(escolha_estado.capitalize())
-                                                print('Cadastro finalizado!')
-                                                print('')
-                                                print('Muito obrigado pela ajuda!')
-                                                break
-                                            elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
-                                                print('Confimação negada!')
-                                                print('')
-                                                print('Obrigado pelo interesse!')
-                                                break
-                                            else:
-                                                opcao_erro()
-                                                print('')
-                                        break
-                                    else:
-                                        opcao_erro()
-                            break
+                                        if ajuda_por_estado == 'dia':
+                                            print('Ajuda escolhida por dia!')
+                                            print('')
+                                            while True:
+                                                confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                if confirmar_cadastro == 'sim':
+                                                    nomes_ongs_estado.append(nome_ong)
+                                                    representantes_ongs_estado.append(representante_ong)
+                                                    emails_ongs_estado.append(email_ong)
+                                                    cnpj_ongs_estado.append(cnpj_ong)
+                                                    endereços_ongs_estado.append(endereço_ong)
+                                                    areas_de_atuacao_estado.append(escolha_estado.capitalize())
+                                                    print('Cadastro finalizado!')
+                                                    print('')
+                                                    print('Muito obrigado pela ajuda!')
+                                                    break
+                                                elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
+                                                    print('Confimação negada!')
+                                                    print('')
+                                                    print('Obrigado pelo interesse!')
+                                                    break
+                                                else:
+                                                    opcao_erro()
+                                                    print('')
+                                            break
+                                        elif ajuda_por_estado == 'mes' or ajuda_por_regiao == 'mês':
+                                            print('Ajuda escolhida por mês!')
+                                            print('')
+                                            while True:
+                                                confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                if confirmar_cadastro == 'sim':
+                                                    nomes_ongs_estado.append(nome_ong)
+                                                    representantes_ongs_estado.append(representante_ong)
+                                                    emails_ongs_estado.append(email_ong)
+                                                    cnpj_ongs_estado.append(cnpj_ong)
+                                                    endereços_ongs_estado.append(endereço_ong)
+                                                    areas_de_atuacao_estado.append(escolha_estado.capitalize())
+                                                    print('Cadastro finalizado!')
+                                                    print('')
+                                                    print('Muito obrigado pela ajuda!')
+                                                    break
+                                                elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
+                                                    print('Confimação negada!')
+                                                    print('')
+                                                    print('Obrigado pelo interesse!')
+                                                    break
+                                                else:
+                                                    opcao_erro()
+                                                    print('')
+                                            break
+                                        elif ajuda_por_estado == 'ano':
+                                            print('Ajuda escolhida por ano!')
+                                            print('')
+                                            while True:
+                                                confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                if confirmar_cadastro == 'sim':
+                                                    nomes_ongs_estado.append(nome_ong)
+                                                    representantes_ongs_estado.append(representante_ong)
+                                                    emails_ongs_estado.append(email_ong)
+                                                    cnpj_ongs_estado.append(cnpj_ong)
+                                                    endereços_ongs_estado.append(endereço_ong)
+                                                    areas_de_atuacao_estado.append(escolha_estado.capitalize())
+                                                    print('Cadastro finalizado!')
+                                                    print('')
+                                                    print('Muito obrigado pela ajuda!')
+                                                    break
+                                                elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
+                                                    print('Confimação negada!')
+                                                    print('')
+                                                    print('Obrigado pelo interesse!')
+                                                    break
+                                                else:
+                                                    opcao_erro()
+                                                    print('')
+                                            break
+                                        else:
+                                            opcao_erro()
+                                    break
+                                else:
+                                    opcao_erro()
+                                break
                         elif local_atuacao == 3:
                             print('Cadastro cancelado!')
                             break
