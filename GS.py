@@ -267,6 +267,7 @@ while True:
                                         break
                                     else:
                                         opcao_erro()
+                            break
                         elif local_atuacao == 3:
                             print('Cadastro cancelado!')
                             break
