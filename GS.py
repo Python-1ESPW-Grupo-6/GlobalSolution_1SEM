@@ -64,7 +64,7 @@ while True:
                 print('Nossa solução proposta consiste em um website que servirá como uma plataforma estratégica para guiar e direcionar as ONGs envolvidas na ')
                 print('assistência alimentar. O objetivo central é conectar essas organizações aos locais mais necessitados de ajuda alimentar, de forma eficiente e efetiva.')
                 print('Através do uso de uma IA generativa direcionada, será possível analisar indicadores socioeconômicos específicos para avaliar o potencial ')
-                print('déficit alimentar de uma determinada região, e fornecer os resultados dessas avaliações para agentes responsáveis por atuar na manutenção desse ')
+                print('déficit alimentar de uma determinada região, e fornecer os resultados dessas avaliações para agentes responsáveis por atuar na manutenção desse')
                 print('problema, visando auxiliar com o problema da fome.')
                 print('No website, as ONGs terão acesso a informações atualizadas sobre as regiões e estados que enfrentam as maiores dificuldades alimentares no ')
                 print('país. Através de um formulário de inscrição, as organizações poderão fornecer dados relevantes, como sua área de atuação, tipo de ajuda que podem oferecer (como alimentos, água')
@@ -327,4 +327,4 @@ while True:
             case _:
                 opcao_erro()
     except ValueError:
-        opcao_erro()
+        opcao_erro() 
