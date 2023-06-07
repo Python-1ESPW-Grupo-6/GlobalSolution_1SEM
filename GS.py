@@ -118,6 +118,7 @@ while True:
                                             print('')
                                             while True:
                                                 confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                print('')
                                                 if confirmar_cadastro == 'sim':
                                                     nomes_ongs_regiao.append(nome_ong)
                                                     representantes_ongs_regiao.append(representante_ong)
@@ -145,6 +146,7 @@ while True:
                                             print('')
                                             while True:
                                                 confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                print('')
                                                 if confirmar_cadastro == 'sim':
                                                     nomes_ongs_regiao.append(nome_ong)
                                                     representantes_ongs_regiao.append(representante_ong)
@@ -172,6 +174,7 @@ while True:
                                             print('')
                                             while True:
                                                 confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                print('')
                                                 if confirmar_cadastro == 'sim':
                                                     nomes_ongs_regiao.append(nome_ong)
                                                     representantes_ongs_regiao.append(representante_ong)
@@ -219,6 +222,7 @@ while True:
                                             print('')
                                             while True:
                                                 confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                print('')
                                                 if confirmar_cadastro == 'sim':
                                                     nomes_ongs_estado.append(nome_ong)
                                                     representantes_ongs_estado.append(representante_ong)
@@ -246,6 +250,7 @@ while True:
                                             print('')
                                             while True:
                                                 confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                print('')
                                                 if confirmar_cadastro == 'sim':
                                                     nomes_ongs_estado.append(nome_ong)
                                                     representantes_ongs_estado.append(representante_ong)
@@ -273,6 +278,7 @@ while True:
                                             print('')
                                             while True:
                                                 confirmar_cadastro = input('Deseja confirmar o cadastro? (sim/não) ')
+                                                print('')
                                                 if confirmar_cadastro == 'sim':
                                                     nomes_ongs_estado.append(nome_ong)
                                                     representantes_ongs_estado.append(representante_ong)
