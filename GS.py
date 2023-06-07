@@ -47,8 +47,11 @@ def opcao_erro():
     print('Opção não encontrada! Tente novamente!')
     print('-'*40)
 
+def tracos():
+    print('-'*50)
+
 while True:
-    print('Menu Principal')
+    print('--- Menu Principal ---')
     print('')
     print('1 - Nosso projeto')
     print('2 - Cadastre sua ONG')
@@ -57,9 +60,12 @@ while True:
     print('')
     try:
         menu_principal = int(input('Numero referente: '))
+        print('')
         match menu_principal:
             case 1:
+                tracos()
                 print('Opção Selecionada: Nosso projeto')
+                tracos()
                 print('')
                 print('Nossa solução proposta consiste em um website que servirá como uma plataforma estratégica para guiar e direcionar as ONGs envolvidas na ')
                 print('assistência alimentar. O objetivo central é conectar essas organizações aos locais mais necessitados de ajuda alimentar, de forma eficiente e efetiva.')
@@ -72,8 +78,11 @@ while True:
                 print('dados precisos sobre a quantidade de alimento necessária em uma determinada região ou estado, oferecendo uma visão clara da demanda por assistência alimentar.')
                 print('Neste programa em Python, buscamos reproduzir como será o funcionamento da IA Generativa, através de códigos de programação e valores pré-')
                 print('estabelecidos, de modo a visualizar como vai ser a utilização da versão final do programa e da aplicação WEB.')
+                print('')
             case 2:
+                tracos()
                 print('Opção Selecionada: Cadastre sua ONG')
+                tracos()
                 print('')
                 nome_ong = input('Insira o nome da sua ONG: ')
                 representante_ong = input('Insira o nome de algum representante: ')
@@ -91,7 +100,9 @@ while True:
                         local_atuacao = int(input('Onde vai querer atuar? (Se quiser cancelar, digite 3) '))
                         print('')
                         if local_atuacao == 1:
+                            tracos()
                             print('Opção selecionada: Regional')
+                            tracos()
                             print('')
                             print('Aqui está a tabela explicando qual tipo de ajuda precisamos nas regiões: ')
                             regioes()
@@ -117,11 +128,13 @@ while True:
                                                     print('Cadastro finalizado!')
                                                     print('')
                                                     print('Muito obrigado pela ajuda!')
+                                                    print('')
                                                     break
                                                 elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
                                                     print('Confimação negada!')
                                                     print('')
                                                     print('Obrigado pelo interesse!')
+                                                    print('')
                                                     break
                                                 else:
                                                     opcao_erro()
@@ -142,11 +155,13 @@ while True:
                                                     print('Cadastro finalizado!')
                                                     print('')
                                                     print('Muito obrigado pela ajuda!')
+                                                    print('')
                                                     break
                                                 elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
                                                     print('Confimação negada!')
                                                     print('')
                                                     print('Obrigado pelo interesse!')
+                                                    print('')
                                                     break
                                                 else:
                                                     opcao_erro()
@@ -167,11 +182,13 @@ while True:
                                                     print('Cadastro finalizado!')
                                                     print('')
                                                     print('Muito obrigado pela ajuda!')
+                                                    print('')
                                                     break
                                                 elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
                                                     print('Confimação negada!')
                                                     print('')
                                                     print('Obrigado pelo interesse!')
+                                                    print('')
                                                     break
                                                 else:
                                                     opcao_erro()
@@ -184,7 +201,9 @@ while True:
                                     opcao_erro()
                             break
                         elif local_atuacao == 2:
+                            tracos()
                             print('Opção selecionada: Estadual')
+                            tracos()
                             print('')
                             print('Aqui está a tabela explicando qual tipo de ajuda precisamos nos estados: ')
                             estados()
@@ -210,11 +229,13 @@ while True:
                                                     print('Cadastro finalizado!')
                                                     print('')
                                                     print('Muito obrigado pela ajuda!')
+                                                    print('')
                                                     break
                                                 elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
                                                     print('Confimação negada!')
                                                     print('')
                                                     print('Obrigado pelo interesse!')
+                                                    print('')
                                                     break
                                                 else:
                                                     opcao_erro()
@@ -235,11 +256,13 @@ while True:
                                                     print('Cadastro finalizado!')
                                                     print('')
                                                     print('Muito obrigado pela ajuda!')
+                                                    print('')
                                                     break
                                                 elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
                                                     print('Confimação negada!')
                                                     print('')
                                                     print('Obrigado pelo interesse!')
+                                                    print('')
                                                     break
                                                 else:
                                                     opcao_erro()
@@ -260,11 +283,13 @@ while True:
                                                     print('Cadastro finalizado!')
                                                     print('')
                                                     print('Muito obrigado pela ajuda!')
+                                                    print('')
                                                     break
                                                 elif confirmar_cadastro == 'não' or confirmar_cadastro == 'nao':
                                                     print('Confimação negada!')
                                                     print('')
                                                     print('Obrigado pelo interesse!')
+                                                    print('')
                                                     break
                                                 else:
                                                     opcao_erro()
@@ -285,7 +310,9 @@ while True:
                         opcao_erro()
             case 3:
                 while True:
+                    tracos()
                     print('Opção Selecionada: Análise geral')
+                    tracos()
                     print('')
                     print('1 - Análise da fome')
                     print('2 - ONGs cadastradas')
@@ -296,12 +323,15 @@ while True:
                         print('')
                         match menu_analise:
                             case 1:
+                                tracos()
                                 print('Opção Selecionada: Análise da fome')
+                                tracos()
                                 regioes()
                                 estados()
-                                print('')
                             case 2:
+                                tracos()
                                 print('Opção Selecionada: ONGs cadastradas')
+                                tracos()
                                 print('')
                                 for i, ongs_regiao in enumerate(nomes_ongs_regiao):
                                     print(f'{i+1}. Nome: {ongs_regiao}, Contato: {emails_ongs_regiao[i]}, Área de atuação: {areas_de_atuacao_regiao[i]}')
@@ -309,9 +339,12 @@ while True:
                                 for i, ongs_estado in enumerate(nomes_ongs_estado):
                                     print(f'{i+1}. Nome: {ongs_estado}, Contato: {emails_ongs_estado[i]}, Área de atuação: {areas_de_atuacao_estado[i]}')
                             case 3:
+                                tracos()
                                 print('Opção Selecionada: Voltar ao menu principal')
+                                tracos()
                                 print('')
                                 print('Voltando ao menu principal...')
+                                print('')
                                 break
                             case _:
                                 opcao_erro()
@@ -319,8 +352,10 @@ while True:
                     except ValueError:
                         opcao_erro()
                         print('')
-            case 4: #colocar um histórico de acesso
+            case 4: 
+                tracos()
                 print('Opção Selecionada: Sair do programa')
+                tracos()
                 print('')
                 print('Finalizando o programa...')
                 break
