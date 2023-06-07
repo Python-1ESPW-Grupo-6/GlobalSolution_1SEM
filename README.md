@@ -54,4 +54,4 @@ ___
 O objetivo da solução que idealizamos é melhor ilustrar a respeito da situação da fome em diferentes regiões, e informar adequadamente os agentes responsáveis por ajudar nesta causa, como ONGs e órgãos públicos, de modo que as ações sociais voltadas ao problema sejam mais eficientes e, consequentemente, a fome seja combatida de melhor forma, com as regiões mais necessitadas recebendo um auxílio adequado para sua situação
 ___
 ### Links Referênciais
-  [Link para o vídeo explicativo do projeto no YouTube]()
+  [Link para o vídeo explicativo do projeto no YouTube](https://www.youtube.com/watch?v=p-x96xZq4Pw)
