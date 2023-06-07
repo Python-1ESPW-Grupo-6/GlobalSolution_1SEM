@@ -141,7 +141,7 @@ while True:
                                                     opcao_erro()
                                                     print('')
                                             break
-                                        elif ajuda_por_regiao == 'mes' or ajuda_por_regiao == 'mês':
+                                        elif ajuda_por_regiao == 'mes' or 'mês':
                                             print('Ajuda escolhida por mês!')
                                             print('')
                                             while True:
@@ -245,7 +245,7 @@ while True:
                                                     opcao_erro()
                                                     print('')
                                             break
-                                        elif ajuda_por_estado == 'mes' or ajuda_por_regiao == 'mês':
+                                        elif ajuda_por_estado == 'mes' or 'mês':
                                             print('Ajuda escolhida por mês!')
                                             print('')
                                             while True:
