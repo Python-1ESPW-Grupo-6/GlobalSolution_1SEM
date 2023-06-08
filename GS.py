@@ -26,7 +26,8 @@ para = 2633000
 alagoas = 1235000
 piaui = 1128000
 
-def regioes():
+#Função para verificar valores
+def regioes(): 
     print('')
     print('Pessoas com fome: Norte - %1.0f; Nordeste - %1.0f' % (norte, nordeste))
     print('Alimento necessário por dia: Norte - %1.0f Kg; Nordeste - %1.0f Kg' % (norte*3, nordeste*3))
@@ -61,10 +62,10 @@ while True:
     try:
         menu_principal = int(input('Numero referente: '))
         print('')
-        match menu_principal:
+        match menu_principal: #Menu base
             case 1:
                 tracos()
-                print('Opção Selecionada: Nosso projeto')
+                print('Opção Selecionada: Nosso projeto') #Descrição basica do projeto
                 tracos()
                 print('')
                 print('Nossa solução proposta consiste em um website que servirá como uma plataforma estratégica para guiar e direcionar as ONGs envolvidas na ')
@@ -81,7 +82,7 @@ while True:
                 print('')
             case 2:
                 tracos()
-                print('Opção Selecionada: Cadastre sua ONG')
+                print('Opção Selecionada: Cadastre sua ONG') #Cadastro de ONGs
                 tracos()
                 print('')
                 nome_ong = input('Insira o nome da sua ONG: ')
@@ -91,7 +92,7 @@ while True:
                 endereço_ong = input('Insira qual seria o endereço sede da ONG: ')
                 print('')
                 while True:
-                    print('Aqui estão o locais que precisamos de ajuda:')
+                    print('Aqui estão o locais que precisamos de ajuda:') #Menu para buscar informações sobre fome em regiao ou estado
                     print('')
                     print('1 - Regional')
                     print('2 - Estadual')
@@ -101,7 +102,7 @@ while True:
                         print('')
                         if local_atuacao == 1:
                             tracos()
-                            print('Opção selecionada: Regional')
+                            print('Opção selecionada: Regional') #Menu de região
                             tracos()
                             print('')
                             print('Aqui está a tabela explicando qual tipo de ajuda precisamos nas regiões: ')
@@ -110,10 +111,10 @@ while True:
                                 escolha_regiao = input('Digite a região a qual escolheu ajudar: ').lower()
                                 print('')
                                 if escolha_regiao in [regiao_escolhida.lower() for regiao_escolhida in lista_regioes]:
-                                    while True:
-                                        ajuda_por_regiao = input('Quer ajudar %s por dia, mês ou anos? ' % escolha_regiao)
+                                    while True: #Sistema para receber ajuda da ONG cadastrada
+                                        ajuda_por_regiao = input('Quer ajudar %s por dia, mês ou anos? ' % escolha_regiao) 
                                         print('')
-                                        if ajuda_por_regiao == 'dia':
+                                        if ajuda_por_regiao == 'dia': #Sistema para dia
                                             print('Ajuda escolhida por dia!')
                                             print('')
                                             while True:
@@ -141,7 +142,7 @@ while True:
                                                     opcao_erro()
                                                     print('')
                                             break
-                                        elif ajuda_por_regiao == 'mes' or 'mês':
+                                        elif ajuda_por_regiao == 'mes' or 'mês': #Sistema para mes
                                             print('Ajuda escolhida por mês!')
                                             print('')
                                             while True:
@@ -169,7 +170,7 @@ while True:
                                                     opcao_erro()
                                                     print('')
                                             break
-                                        elif ajuda_por_regiao == 'ano':
+                                        elif ajuda_por_regiao == 'ano': #Sistema para ano
                                             print('Ajuda escolhida por ano!')
                                             print('')
                                             while True:
@@ -203,7 +204,7 @@ while True:
                                 else:
                                     opcao_erro()
                             break
-                        elif local_atuacao == 2:
+                        elif local_atuacao == 2: #Menu para estado
                             tracos()
                             print('Opção selecionada: Estadual')
                             tracos()
@@ -217,7 +218,7 @@ while True:
                                     while True:
                                         ajuda_por_estado = input('Quer ajudar por dia, mês ou anos? ')
                                         print('')
-                                        if ajuda_por_estado == 'dia':
+                                        if ajuda_por_estado == 'dia': #Sistema para dia
                                             print('Ajuda escolhida por dia!')
                                             print('')
                                             while True:
@@ -245,7 +246,7 @@ while True:
                                                     opcao_erro()
                                                     print('')
                                             break
-                                        elif ajuda_por_estado == 'mes' or 'mês':
+                                        elif ajuda_por_estado == 'mes' or 'mês': #Sistema para mes
                                             print('Ajuda escolhida por mês!')
                                             print('')
                                             while True:
@@ -273,7 +274,7 @@ while True:
                                                     opcao_erro()
                                                     print('')
                                             break
-                                        elif ajuda_por_estado == 'ano':
+                                        elif ajuda_por_estado == 'ano': #Sistema para ano
                                             print('Ajuda escolhida por ano!')
                                             print('')
                                             while True:
@@ -317,7 +318,7 @@ while True:
             case 3:
                 while True:
                     tracos()
-                    print('Opção Selecionada: Análise geral')
+                    print('Opção Selecionada: Análise geral') #Busca das informações que o programa oferece
                     tracos()
                     print('')
                     print('1 - Análise da fome')
@@ -327,7 +328,7 @@ while True:
                     try:
                         menu_analise = int(input('Número referente: '))
                         print('')
-                        match menu_analise:
+                        match menu_analise: #Amostra das informaçoes guardadas em listas e funções
                             case 1:
                                 tracos()
                                 print('Opção Selecionada: Análise da fome')
@@ -360,7 +361,7 @@ while True:
                         print('')
             case 4: 
                 tracos()
-                print('Opção Selecionada: Sair do programa')
+                print('Opção Selecionada: Sair do programa') #Fim do programa
                 tracos()
                 print('')
                 print('Finalizando o programa...')
